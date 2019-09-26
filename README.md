@@ -101,7 +101,7 @@ dependencies {
     implementation 'com.android.support.constraint:constraint-layout:<version above 1.1.3>'
    
     // Forus Core Dependency
-    implementation('com.frslabs.android.sdk:forus:2.0.0-rc3')
+    implementation('com.frslabs.android.sdk:forus:2.0.0')
 
     // Forus Additional Depedencies 
     iimplementation('com.google.android.gms:play-services-vision:17.0.2')
