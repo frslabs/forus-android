@@ -104,7 +104,7 @@ dependencies {
     implementation('com.frslabs.android.sdk:forus:2.0.0')
 
     // Forus Additional Depedencies 
-    iimplementation('com.google.android.gms:play-services-vision:17.0.2')
+    implementation('com.google.android.gms:play-services-vision:17.0.2')
     
     // Optional - Required if transaction based billing is enabled
     // Forus billing dependencies
