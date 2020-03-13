@@ -1,5 +1,5 @@
 # FORUS SDK
-![version](https://img.shields.io/badge/version-v2.0.1-blue)
+![version](https://img.shields.io/badge/version-v2.0.2-blue)
 
 Forus SDK comes with a simple screen with multiple instructions to capture a perfect KYC compliant photograph. The SDK comes with compression, blur and exposure detection as standard.
 
@@ -104,14 +104,14 @@ dependencies {
     implementation 'com.android.support.constraint:constraint-layout:<version above 1.1.3>'
    
     // Forus Core Dependency
-    implementation('com.frslabs.android.sdk:forus:2.0.1')
+    implementation('com.frslabs.android.sdk:forus:2.0.2')
 
     // Forus Additional Depedencies 
     implementation('com.google.android.gms:play-services-vision:17.0.2')
     
     // Optional - Required if transaction based billing is enabled
     // Forus billing dependencies
-    implementation('com.frslabs.android.sdk:torus:0.0.9')
+    implementation('com.frslabs.android.sdk:torus:0.1.1')
     implementation('com.squareup.retrofit2:converter-gson:2.3.0')
     implementation('com.squareup.retrofit2:retrofit:2.3.0')
     implementation('com.google.code.gson:gson:2.8.5')
