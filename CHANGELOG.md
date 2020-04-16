@@ -1,5 +1,10 @@
 # Changelog
 
+## **v2.0.3** - *16-04-2020*
+
+### Added
+- Beep sound added once the face captured.
+
 ## **v2.0.2** - *13-03-2020*
 
 ### Added
