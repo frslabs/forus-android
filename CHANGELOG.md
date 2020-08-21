@@ -1,5 +1,12 @@
 # Changelog
 
+
+## **v2.0.4** - *19-08-2020*
+
+### Added
+-Code Migrated to AndroidX
+
+
 ## **v2.0.3** - *16-04-2020*
 
 ### Added
