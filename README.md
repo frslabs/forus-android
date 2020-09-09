@@ -101,13 +101,13 @@ And then, add the dependencies
 dependencies {
     /* Dependencies for Forus SDK */ 
     
-    implementation 'androidx.appcompat:appcompat:1.2.0'
+    implementation 'androidx.appcompat:appcompat:<lastest verison>'
     
-    implementation 'androidx.legacy:legacy-support-v4:1.0.0'
+    implementation 'androidx.legacy:legacy-support-v4:<lastest verison>'
     
-    implementation 'com.google.android.material:material:1.2.0'
+    implementation 'com.google.android.material:material:<lastest verison>'
     
-    implementation 'androidx.constraintlayout:constraintlayout:1.1.3'
+    implementation 'androidx.constraintlayout:constraintlayout:<lastest verison>'
    
     // Forus Core Dependency
     implementation('com.frslabs.android.sdk:forus:3.0.0')
