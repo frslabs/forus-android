@@ -100,8 +100,11 @@ And then, add the dependencies
 
 dependencies {
     /* Dependencies for Forus SDK */ 
-    implementation 'com.android.support:design:<version above 23.4.0>'      
-    implementation 'com.android.support.constraint:constraint-layout:<version above 1.1.3>'
+    
+     implementation 'androidx.appcompat:appcompat:1.2.0'
+    implementation 'androidx.legacy:legacy-support-v4:1.0.0'
+    implementation 'com.google.android.material:material:1.2.0'
+    implementation 'androidx.constraintlayout:constraintlayout:1.1.3'
    
     // Forus Core Dependency
     implementation('com.frslabs.android.sdk:forus:3.0.0')
@@ -112,9 +115,6 @@ dependencies {
     // Optional - Required if transaction based billing is enabled
     // Forus billing dependencies
     implementation('com.frslabs.android.sdk:torus:1.0.0')
-    implementation('com.squareup.retrofit2:converter-gson:2.3.0')
-    implementation('com.squareup.retrofit2:retrofit:2.3.0')
-    implementation('com.google.code.gson:gson:2.8.5')
 }
 ```
 
