@@ -1,6 +1,13 @@
 # Changelog
 
 
+## **v3.0.2** - *22-09-2020*
+
+### Added
+- Obfuscation added
+- Processsing face added
+
+
 ## **v3.0.0** - *19-08-2020*
 
 ### Added
