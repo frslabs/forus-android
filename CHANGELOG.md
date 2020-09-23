@@ -1,7 +1,7 @@
 # Changelog
 
 
-## **v3.0.2** - *22-09-2020*
+## **v3.0.2** - *23-09-2020*
 
 ### Added
 - Added detailed guided instructions to users
