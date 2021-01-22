@@ -1,5 +1,9 @@
 # Changelog
 
+# **v3.0.3** - *22-01-2021*
+
+### Added
+- Added timestamp on face
 
 ## **v3.0.2** - *23-09-2020*
 
