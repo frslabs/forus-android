@@ -254,8 +254,8 @@ See the below table for other options to initialize the settings
 | *setTimestampColor(int colorCode)*                   | #FF0                 | optional | By default its yellow If needed any other color enable this option.                                                                                                                                                             
 | *setTimestampFontSize(Float timestampSize)*          | 13.0f                | optional | Float value between 13.0f to 16.0f . 
 
-| *setContext(Activity var1)*                          | NULL                 | yes      | Pass your activity object.                                                                                                                                               |
-| *setForusCallbackResponse(ForusCallbackResponse var1)* | NULL                 | yes      | Pass the ForusCallbackResponse object.                 
+| *setContext(Activity var1)*                          | NULL                 | yes      | Pass your activity object.                                                                                                                                               
+| *setForusCallbackResponse(ForusCallbackResponse var1)* | NULL                | yes      | Pass the ForusCallbackResponse object.                 
 
 
 ## Help
