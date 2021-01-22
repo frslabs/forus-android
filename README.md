@@ -249,12 +249,12 @@ See the below table for other options to initialize the settings
 | *setCheckImageQuailty(boolean var1)*                 | true                 | optional | If it is **true** then the SDK will detect blurriness in the picture while capturing face and show a message to the user. Otherwise the face image quality may be poor.  |
 | *setImageQualityThreshold(int* var1)                 | Utility.MEDIUM       | optional | Utility.LOW <br>Utility.MEDIUM <br>Utility.HIGH                                                                                                                          |
 | *setDetectSmile(boolean var1)*                       | false                | optional | If it is **true** then the smile detection will be enabled.                                                                                                              |
-| *setNoTimeout(boolean var1)*                         | false                | optional | If it is true then the SDK will override the *faceCaptureTimeLimit* to infinite.                                                                                         
-| *setTimeOnFaceNeeded(boolean var1)*                  | false                | optional | If it is **true** then the timestamp on face will be enabled.                                                                                                             
-| *setTimestampColor(int colorCode)*                   | #FF0                 | optional | By default its yellow If needed any other color enable this option.                                                                                                                                                             
+| *setNoTimeout(boolean var1)*                         | false                | optional | If it is true then the SDK will override the *faceCaptureTimeLimit* to infinite.                                                                                         |
+| *setTimeOnFaceNeeded(boolean var1)*                  | false                | optional | If it is **true** then the timestamp on face will be enabled.                                                                                                             |
+| *setTimestampColor(int colorCode)*                   | #FF0                 | optional | By default its yellow If needed any other color enable this option.                                                                                                        |                                                     
 | *setTimestampFontSize(Float timestampSize)*          | 13.0f                | optional | Float value between 13.0f to 16.0f . 
-
-| *setContext(Activity var1)*                          | NULL                 | yes      | Pass your activity object.                                                                                                                                               
+                                                                                                   |
+| *setContext(Activity var1)*                          | NULL                 | yes      | Pass your activity object.                                                                                                                                                  |
 | *setForusCallbackResponse(ForusCallbackResponse var1)* | NULL                | yes      | Pass the ForusCallbackResponse object.                 
 
 
