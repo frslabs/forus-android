@@ -179,7 +179,7 @@ Initialize an instance of `Forus` with the appropriate parameters to invoke the 
           .setNoTimeout(false)
           .setContext(<YOUR_ACTIVITY>.this)
           .setTimeOnFaceNeeded(true)//If timestamp required on photo make it true else false
-          .setTimestampColor(#F00)//If timestampcolor required on photo add color code here
+          .setTimestampColor(android.graphics.Color.BLUE)//If timestampcolor required on photo add color code here
           .setTimestampFontSize(13.0f)  //If timestampsize required on photo add textsioze here
           .setForusCallbackResponse(forusCallbackResponse)
           .build();
