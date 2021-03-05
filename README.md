@@ -1,5 +1,5 @@
 # FORUS SDK
-![version](https://img.shields.io/badge/version-v3.0.3-blue)
+![version](https://img.shields.io/badge/version-v3.0.4-blue)
 
 Forus SDK comes with a simple screen with multiple instructions to capture a perfect KYC compliant photograph. The SDK comes with compression, blur and exposure detection as standard.
 
@@ -110,7 +110,7 @@ dependencies {
     implementation 'androidx.constraintlayout:constraintlayout:<lastest verison>'
    
     // Forus Core Dependency
-    implementation('com.frslabs.android.sdk:forus:3.0.3')
+    implementation('com.frslabs.android.sdk:forus:3.0.4')
 
     // Forus Additional Depedencies 
     implementation('com.google.android.gms:play-services-vision:17.0.2')
@@ -181,6 +181,7 @@ Initialize an instance of `Forus` with the appropriate parameters to invoke the 
           .setTimeOnFaceNeeded(true)//If timestamp required on photo make it true else false
           .setTimestampColor(android.graphics.Color.BLUE)//If timestampcolor required on photo add color code here
           .setTimestampFontSize(13.0f)  //If timestampsize required on photo add textsioze here
+          .setTimeStampFormat("hh:mm aaa") //Required timestamp format string need to pass here
           .setForusCallbackResponse(forusCallbackResponse)
           .build();
         
@@ -253,6 +254,7 @@ See the below table for other options to initialize the settings
 | *setTimeOnFaceNeeded(boolean var1)*                  | false                | optional | If it is **true** then the timestamp on face will be enabled.                                                                                                             |
 | *setTimestampColor(int colorCode)*                   | #FF0                 | optional | By default its yellow If needed any other color enable this option.                                                                                                        |                                                     
 | *setTimestampFontSize(Float timestampSize)*          | 13.0f                | optional | Float value between 13.0f to 16.0f . 
+| *setTimeStampFormat(String timeStampFormat)*          | yyyy-MM-dd hh:mm:ss           | optional | By default timestamp will display yyyy-MM-dd hh:mm:ss If neededany other format will enable this option. 
 | *setContext(Activity var1)*                          | NULL                 | yes      | Pass your activity object.    
 | *setForusCallbackResponse(ForusCallbackResponse var1)* | NULL                | yes      | Pass the ForusCallbackResponse object.                 
 
