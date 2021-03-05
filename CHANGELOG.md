@@ -4,7 +4,7 @@
 
 ### Added
 - Added timestamp format dynamic
-- 
+
 # **v3.0.3** - *22-01-2021*
 
 ### Added
