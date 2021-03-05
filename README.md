@@ -254,7 +254,7 @@ See the below table for other options to initialize the settings
 | *setTimeOnFaceNeeded(boolean var1)*                  | false                | optional | If it is **true** then the timestamp on face will be enabled.                                                                                                             |
 | *setTimestampColor(int colorCode)*                   | #FF0                 | optional | By default its yellow If needed any other color enable this option.                                                                                                        |                                                     
 | *setTimestampFontSize(Float timestampSize)*          | 13.0f                | optional | Float value between 13.0f to 16.0f . 
-| *setTimeStampFormat(String timeStampFormat)*          | yyyy-MM-dd hh:mm:ss           | optional | By default timestamp will display yyyy-MM-dd hh:mm:ss If neededany other format will enable this option. 
+| *setTimeStampFormat(String timeStampFormat)*          | yyyy-MM-dd hh:mm:ss           | optional | By default timestamp will display yyyy-MM-dd hh:mm:ss If needed any other format will enable this option. 
 | *setContext(Activity var1)*                          | NULL                 | yes      | Pass your activity object.    
 | *setForusCallbackResponse(ForusCallbackResponse var1)* | NULL                | yes      | Pass the ForusCallbackResponse object.                 
 
