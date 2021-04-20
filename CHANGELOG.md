@@ -1,5 +1,11 @@
 # Changelog
 
+# **v3.1.0** - *20-04-2021*
+
+### Added
+- Bug Fix - Addressed Problematic Face Detection Bug on some devices
+- Bug Fix - Addressed Camera Preview Color Bug
+
 # **v3.0.4** - *05-03-2021*
 
 ### Added
