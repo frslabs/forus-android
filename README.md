@@ -4,12 +4,14 @@
 Forus SDK is a touch-free, face image capture solution for a perfect KYC compliant photograph.
 
 Key features are,
-- Face and liveliness detection
+- Face and liveness detection
 - Anti-Spoof detection
 - Watermarking photo
 - Face image crop, compress, quality enhancements like blur and shake detection
 
 You can find the release history at [Changelog](CHANGELOG.md).
+
+&#8252; **ATTENTION** &#8252; &rarr; Documentation for Previous Forus SDK Releases can be found [here](https://github.com/frslabs/forus-android/tree/3.X.X).
 
 # Table Of Content
 
@@ -54,7 +56,7 @@ This section lists the Forus SDK Libraries that are available for Android with t
 | [Forus Proteus Face SDK](#forus-proteus-face-sdk) (Optional)           | com.frslabs.android.sdk:forus-proteus-face        | ![version](https://img.shields.io/badge/version-v1.0.0--beta01-blue)     | 1.4 MB     |
 
 #### Forus SDK
-This is the core SDK that provides a no-contact photo capture solution with face and liveliness detection among other features. Its extremely customisable and gives you the captured face image as the result.
+This is the core SDK that provides a no-contact photo capture solution with face and liveness detection among other features. Its extremely customisable and gives you the captured face image as the result.
 
 Steps to add and initialise the Forus Proteus Antispoof SDK,
 - To get started with setting up Forus SDK, refer [Set Up Forus SDK](#set-up-forus-sdk)
@@ -68,7 +70,7 @@ Steps to add and initialise the Forus Proteus Antispoof SDK,
 - To enable Antispoof detection, Refer [Enabling Forus Proteus Antispoof SDK](#enabling-forus-proteus-antispoof-sdk) 
 
 #### Forus Proteus Face SDK
-This is a feature SDK that provides a drop-in replacement for the default face detection engine used in the [Forus](#forus) SDK. Import this library if you face any issue with the default face detection engine. **However liveliness detection capabalities are still in development and does not exist for the latest version of this feature library**.
+This is a feature SDK that provides a drop-in replacement for the default face detection engine used in the [Forus](#forus) SDK. Import this library if you face any issue with the default face detection engine. **However liveness detection capabalities are still in development and does not exist for the latest version of this feature library**.
 
 Steps to add and initialise the Forus Proteus Antispoof SDK,
 - To import Forus Proteus Face SDK , Refer [Importing Forus Proteus Face SDK](#importing-forus-proteus-face-sdk) 
