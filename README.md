@@ -49,8 +49,8 @@ Once you have the license , follow the below instructions for a successful integ
 
 This section lists the Forus SDK Libraries that are available for Android with their gradle dependencies, latest version and their size.
 
-| SDK Library                                                    | Gradle dependency                                 | Latest version  | Size       |
-| ---------------------------------------------------------------| ------------------------------------------------- | --------------- | ---------- |
+| SDK Library                                 | Gradle dependency                                 | Latest version  | Size                    |
+| --------------------------------------------| ------------------------------------------------- | --------------- | ----------------------- |
 | [Forus SDK](#forus-sdk) (Required)                                     | com.frslabs.android.sdk:forus                     | ![version](https://img.shields.io/badge/version-v4.0.0--beta10-blue)    | 350 KB     |
 | [Forus Proteus Antispoof SDK](#forus-proteus-antispoof-sdk) (Optional) | com.frslabs.android.sdk:forus-proteus-antispoof   | ![version](https://img.shields.io/badge/version-v1.0.0--beta01-blue)     | 4.5 MB     |
 | [Forus Proteus Face SDK](#forus-proteus-face-sdk) (Optional)           | com.frslabs.android.sdk:forus-proteus-face        | ![version](https://img.shields.io/badge/version-v1.0.0--beta01-blue)     | 1.4 MB     |
