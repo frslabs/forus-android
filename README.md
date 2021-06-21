@@ -11,7 +11,7 @@ Key features are,
 
 You can find the release history at [Changelog](CHANGELOG.md).
 
-&#8252; **ATTENTION** &#8252; &rarr; Documentation for Previous Forus SDK Releases can be found [here](https://github.com/frslabs/forus-android/tree/3.X.X).
+&#8252; **ATTENTION** &#8252; &rarr; **Documentation for Previous Forus SDK Releases can be found [here](https://github.com/frslabs/forus-android/tree/3.X.X)**
 
 # Table Of Content
 
