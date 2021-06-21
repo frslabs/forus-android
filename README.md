@@ -17,7 +17,7 @@ You can find the release history at [Changelog](CHANGELOG.md).
 
 - [Prerequisite](#prerequisite)
 - [Overview of Forus SDK Libraries](#overview-of-forus-sdk-libraries)
-  - [Forus](#forus)
+  - [Forus SDK](#forus-sdk)
   - [Forus Proteus Antispoof SDK](#forus-proteus-antispoof-sdk)
   - [Forus Proteus Face SDK](#forus-proteus-face-sdk)
   - [Forus SDK Libraries Landscape](#forus-sdk-libraries-landscape)
@@ -63,14 +63,14 @@ Steps to add and initialise the Forus Proteus Antispoof SDK,
 - To integrate the Forus SDK, Refer [Initialise and run the Forus SDK](#initialise-and-run-the-forus-sdk)
 
 #### Forus Proteus Antispoof SDK
-This is a feature SDK that provides antispoof detection capabilities on top of [Forus](#forus) SDK. The antispoof result is a confidence percentage which denotes whether the face image is a fake or not. 
+This is a feature SDK that provides antispoof detection capabilities on top of [Forus SDK](#forus-sdk). The antispoof result is a confidence percentage which denotes whether the face image is a fake or not. 
 
 Steps to add and initialise the Forus Proteus Antispoof SDK,
 - To import Forus Proteus Antispoof SDK , Refer [Importing Forus Proteus Antispoof SDK](#importing-forus-proteus-antispoof-sdk) 
 - To enable Antispoof detection, Refer [Enabling Forus Proteus Antispoof SDK](#enabling-forus-proteus-antispoof-sdk) 
 
 #### Forus Proteus Face SDK
-This is a feature SDK that provides a drop-in replacement for the default face detection engine used in the [Forus](#forus) SDK. Import this library if you face any issue with the default face detection engine. **However liveness detection capabalities are still in development and does not exist for the latest version of this feature library**.
+This is a feature SDK that provides a drop-in replacement for the default face detection engine used in the [Forus SDK](#forus-sdk). Import this library if you face any issue with the default face detection engine. **However liveness detection capabalities are still in development and does not exist for the latest version of this feature library**.
 
 Steps to add and initialise the Forus Proteus Antispoof SDK,
 - To import Forus Proteus Face SDK , Refer [Importing Forus Proteus Face SDK](#importing-forus-proteus-face-sdk) 
@@ -79,22 +79,22 @@ Steps to add and initialise the Forus Proteus Antispoof SDK,
 #### Forus SDK Libraries Landscape
 Here are block diagrams visualising how the Forus SDK would be built depending on the dependencies you choose and enable,
 
-- Only the core [Forus](#forus) SDK
+- Only the core [Forus SDK](#forus-sdk)
 <img src="DOC_RESOURCES/forus_sdk_landscape_default.png" width="75%" >
 
 ---
 
-- [Forus](#forus) SDK + [Forus Proteus Antispoof](#forus-proteus-antispoof) SDK
+- [Forus SDK](#forus-sdk) + [Forus Proteus Antispoof SDK](#forus-proteus-antispoof-sdk)
 <img src="DOC_RESOURCES/forus_sdk_landscape_default_pspoof.png" width="75%" >
 
 ---
 
-- [Forus](#forus) SDK + [Forus Proteus Face](#forus-proteus-face) SDK
+- [Forus SDK](#forus-sdk) + [Forus Proteus Face SDK](#forus-proteus-face-sdk)
 <img src="DOC_RESOURCES/forus_sdk_landscape_pface.png" width="75%" >
 
 ---
 
-- [Forus](#forus) SDK + [Forus Proteus Face](#forus-proteus-face) SDK + [Forus Proteus Antispoof](#forus-proteus-antispoof) SDK
+- [Forus SDK](#forus-sdk) + [Forus Proteus Face SDK](#forus-proteus-face-sdk) + [Forus Proteus Antispoof SDK](#forus-proteus-antispoof-sdk)
 <img src="DOC_RESOURCES/forus_sdk_landscape_pface_pspoof.png" width="75%" >
 
 ## Set Up Forus SDK
