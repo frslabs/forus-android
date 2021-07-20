@@ -72,7 +72,7 @@ Steps to add and initialise the Forus Proteus Antispoof SDK,
 #### Forus Proteus Face SDK
 This is a feature SDK that provides a drop-in replacement for the default face detection engine used in the [Forus SDK](#forus-sdk). Import this library if you face any issue with the default face detection engine. **However liveness detection capabalities are still in development and does not exist for the latest version of this feature library**.
 
-Steps to add and initialise the Forus Proteus Antispoof SDK,
+Steps to add and initialise the Forus Proteus Face SDK,
 - To import Forus Proteus Face SDK , Refer [Importing Forus Proteus Face SDK](#importing-forus-proteus-face-sdk) 
 - Refer [Enabling Forus Proteus Face SDK](#enabling-forus-proteus-face-sdk) to replace the default Face Detection Engine
 
