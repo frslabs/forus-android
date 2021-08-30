@@ -51,9 +51,9 @@ This section lists the Forus SDK Libraries that are available for Android with t
 
 | SDK Library                                 | Gradle dependency                                 | Latest version  | Size                    |
 | --------------------------------------------| ------------------------------------------------- | --------------- | ----------------------- |
-| [Forus SDK](#forus-sdk) (Required)                                     | com.frslabs.android.sdk:forus                     | ![version](https://img.shields.io/badge/version-v4.0.0--beta10-blue)    | 350 KB     |
-| [Forus Proteus Antispoof SDK](#forus-proteus-antispoof-sdk) (Optional) | com.frslabs.android.sdk:forus-proteus-antispoof   | ![version](https://img.shields.io/badge/version-v1.0.0--beta01-blue)     | 4.5 MB     |
-| [Forus Proteus Face SDK](#forus-proteus-face-sdk) (Optional)           | com.frslabs.android.sdk:forus-proteus-face        | ![version](https://img.shields.io/badge/version-v1.0.0--beta01-blue)     | 1.4 MB     |
+| [Forus SDK](#forus-sdk) (Required)                                     | com.frslabs.android.sdk:forus                     | ![version](https://img.shields.io/badge/version-v4.0.0-blue)    | 350 KB     |
+| [Forus Proteus Antispoof SDK](#forus-proteus-antispoof-sdk) (Optional) | com.frslabs.android.sdk:forus-proteus-antispoof   | ![version](https://img.shields.io/badge/version-v1.0.0-blue)     | 4.5 MB     |
+| [Forus Proteus Face SDK](#forus-proteus-face-sdk) (Optional)           | com.frslabs.android.sdk:forus-proteus-face        | ![version](https://img.shields.io/badge/version-v1.0.0-blue)     | 1.4 MB     |
 
 #### Forus SDK
 This is the core SDK that provides a no-contact photo capture solution with face and liveness detection among other features. Its extremely customisable and gives you the captured face image as the result.
@@ -190,7 +190,7 @@ dependencies {
     /*
      * Forus SDK Core Dependency
      */
-    implementation 'com.frslabs.android.sdk:forus:4.0.0-beta10'
+    implementation 'com.frslabs.android.sdk:forus:4.0.0'
     implementation 'com.google.android.gms:play-services-vision:20.1.3'
 
     /*
@@ -203,14 +203,14 @@ dependencies {
 #### Importing Forus Proteus Antispoof SDK
 - Add the dependency for the Forus Proteus Antispoof SDK to your app's module (app-level) build.gradle file:
 ```groovy
-implementation 'com.frslabs.android.sdk:forus-proteus-antispoof:1.0.0-beta01' // Forus Proteus Antispoof, For more information refer documentation
+implementation 'com.frslabs.android.sdk:forus-proteus-antispoof:1.0.0' // Forus Proteus Antispoof, For more information refer documentation
 implementation 'org.tensorflow:tensorflow-lite:2.5.0'
 ```
 
 #### Importing Forus Proteus Face SDK
 - Add the dependency for the Forus Proteus Antispoof SDK to your app's module (app-level) build.gradle file:
 ```groovy
-implementation 'com.frslabs.android.sdk:forus-proteus-face:1.0.0-beta01' // Forus Proteus Face, For more information refer documentation
+implementation 'com.frslabs.android.sdk:forus-proteus-face:1.0.0' // Forus Proteus Face, For more information refer documentation
 implementation 'org.tensorflow:tensorflow-lite:2.5.0'
 ```
 
