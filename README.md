@@ -208,7 +208,7 @@ implementation 'org.tensorflow:tensorflow-lite:2.5.0'
 ```
 
 #### Importing Forus Proteus Face SDK
-- Add the dependency for the Forus Proteus Antispoof SDK to your app's module (app-level) build.gradle file:
+- Add the dependency for the Forus Proteus Face SDK to your app's module (app-level) build.gradle file:
 ```groovy
 implementation 'com.frslabs.android.sdk:forus-proteus-face:1.0.0' // Forus Proteus Face, For more information refer documentation
 implementation 'org.tensorflow:tensorflow-lite:2.5.0'
@@ -316,7 +316,7 @@ public class MainActivity extends AppCompatActivity{
 
 #### Enabling Forus Proteus Face SDK
 
-- To enable the antispoof functionality in the app, make sure you add `enableFaceEngine()` when contructing `ForusFaceConfig` object.
+- To enable this functionality in the app, make sure you add `enableFaceEngine()` when contructing `ForusFaceConfig` object.
 ```java
   
   // ...
