@@ -299,7 +299,7 @@ public class MainActivity extends AppCompatActivity{
 
 #### Enabling Forus Proteus Antispoof SDK
 
-- To enable the antispoof functionality in the app, make sure you add `enableAntiSpoofEngine()` when contructing `ForusFaceConfig` object.
+- To enable the antispoof functionality in the app, make sure you add `enableAntiSpoofEngine()` when constructing `ForusFaceConfig` object.
 ```java
   
   // ...
@@ -316,7 +316,7 @@ public class MainActivity extends AppCompatActivity{
 
 #### Enabling Forus Proteus Face SDK
 
-- To enable this functionality in the app, make sure you add `enableFaceEngine()` when contructing `ForusFaceConfig` object.
+- To enable this functionality in the app, make sure you add `enableFaceEngine()` when constructing `ForusFaceConfig` object.
 ```java
   
   // ...
