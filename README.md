@@ -249,7 +249,8 @@ public class MainActivity extends AppCompatActivity{
          */
         ForusFaceConfig forusFaceConfig = new ForusFaceConfig.Builder()
                 .enableFaceEngine(ForusFaceEngine.createDefaultEngine(true,1,false)) // Sets the face detection engine, refer Forus SDK API documentation
-                .forusFaceConfigBuilder.setWatermarkOnFace(watermarkColorCodeValue, watermarkFontSize, "dd-MM-yyyy HH:mm:ss", watermarkField3.getText().toString(),          watermarkField4.getText().toString(), watermarkField5.getText().toString()); // Sets the watermark on the output image
+                .forusFaceConfigBuilder.setWatermarkOnFace(watermarkColorCodeValue, watermarkFontSize, "dd-MM-yyyy HH:mm:ss", watermarkField3.getText().toString(),           
+                 watermarkField4.getText().toString(), watermarkField5.getText().toString()); // Sets the watermark on the output image
                 .setFaceCaptureTimeLimit(8) // Sets the time limit for face image capture
                 .build(); // Builds ForusFaceConfig Instance
 
