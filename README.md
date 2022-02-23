@@ -404,7 +404,7 @@ See the below table for the public APIs of Forus SDK,
 | Method                                               | Default              | Required | Comments    |
 |:---------------------------------------------------- |:-------------------- |:-------- |:------------------------------------------------------------------------------------------------------------------------------------------------------------------------ |
 | *enableFaceEngine(ForusFaceEngine forusFaceEngine)*  | Default Face Engine  | Yes      | Refer [ForusFaceEngine](#forusfaceengine)           |
-| *setTimestampOnFace(int watermarkColor, float watermarkSize, String timestampFormat, String watermarkField3, String watermarkField4, String watermarkField5)*      | true                | Optional      | Sets the watermark on the output image. |
+| *setWatermarkOnFace(int watermarkColor, float watermarkSize, String timestampFormat, String watermarkField3, String watermarkField4, String watermarkField5)*      | true                | Optional      | Sets the watermark on the output image. |
 | *setFaceCaptureTimeLimit(int timeLimitInSec)*   | 8                | Optional      |Integer value between 8 to 60 seconds.     |
 | *build()*   | -               | -      | Builds ForusFaceConfig Instance  |
 
