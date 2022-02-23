@@ -1,6 +1,6 @@
 # Changelog
 
-# **v4.1.0** - *30-08-2021*
+# **v4.1.0** - *23-02-2022*
 
 ### Added
 - Restructured SDK Internals
