@@ -190,7 +190,7 @@ dependencies {
     /*
      * Forus SDK Core Dependency
      */
-    implementation 'com.frslabs.android.sdk:forus:4.0.0'
+    implementation 'com.frslabs.android.sdk:forus:4.1.0'
     implementation 'com.google.android.gms:play-services-vision:20.1.3'
 
     /*
