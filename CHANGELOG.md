@@ -3,7 +3,6 @@
 # **v4.1.0** - *23-02-2022*
 
 ### Added
-- Restructured SDK Internals
 - Added watermark details (time, date, location, custom field) on face. 
 
 # **v4.0.0** - *30-08-2021*
