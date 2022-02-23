@@ -409,6 +409,9 @@ See the below table for the public APIs of Forus SDK,
 | *setFaceCaptureTimeLimit(int timeLimitInSec)*   | 8                | Optional      |Integer value between 8 to 60 seconds.     |
 | *build()*   | -               | -      | Builds ForusFaceConfig Instance  |
 
+Note :
+The watermark size and position on the image depends on the overall size of the final image which depends on the distance between the user's face and the camera and the screen size at the time of image capture. You can change the font size, colour and which if the watermark fields should appear from the SDK. You can also add your own logic of font sizes for different mobile screen sizes.
+
 ##### ForusFaceEngine 
 `ForusFaceEngine` is to be set when instantiating the `ForusFaceConfig` , See [ForusFaceConfig](#forusfaceconfig)
 
