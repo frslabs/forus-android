@@ -9,7 +9,7 @@ Key features are,
 - Watermarking photo
 - Face image crop, compress, quality enhancements like blur and shake detection
 
-You can find the latest changelog at [Changelog](CHANGELOG.md). Changelog for older versions (3.X.X) can be found [here](https://github.com/frslabs/forus-android/tree/3.X.X).
+You can find the latest changelog at [Changelog](CHANGELOG.md). Documentation for older versions (3.X.X) can be found [here](https://github.com/frslabs/forus-android/tree/3.X.X).
 
 ‼ ATTENTION ‼ → BREAKING CHANGE introduced at Forus SDK `v4.2.1`. We have introduced a new license format. If you are using versions prior to `v4.2.1` and intend to update to `v4.2.1`, contact frslabs@support.com for an updated license.
 
