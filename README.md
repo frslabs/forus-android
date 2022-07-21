@@ -11,7 +11,7 @@ Key features are,
 
 You can find the latest changelog at [Changelog](CHANGELOG.md). Documentation for older versions (3.X.X) can be found [here](https://github.com/frslabs/forus-android/tree/3.X.X).
 
-‼ ATTENTION ‼ → BREAKING CHANGE introduced at Forus SDK `v4.2.1`. We have introduced a new license format. If you are using versions prior to `v4.2.1` and intend to update to `v4.2.1`, contact frslabs@support.com for an updated license.
+‼ ATTENTION ‼ → BREAKING CHANGE introduced at Forus SDK `v4.2.1`. We have introduced a new license format. If you are using versions prior to `v4.2.1` and intend to update to `v4.2.1`, contact `support@frslabs.com` for an updated license.
 
 # Table Of Content
 
