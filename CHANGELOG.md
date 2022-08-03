@@ -1,7 +1,7 @@
 # Changelog
 
 # **v4.2.1** - *15-07-2022*
-‼ ATTENTION ‼ → BREAKING CHANGE introduced at Forus SDK `v4.2.1`. We have introduced a new license format. If you are using versions prior to `v4.2.1` and intend to update to `v4.2.1`, contact frslabs@support.com for an updated license.
+‼ ATTENTION ‼ → BREAKING CHANGE introduced at Forus SDK `v4.2.1`. We have introduced a new license format. If you are using versions prior to `v4.2.1` and intend to update to `v4.2.1`, contact support@frslabs.com for an updated license.
 
 - Added support for new license format
 - SDK now targets API `32`
