@@ -19,18 +19,15 @@ You can find the latest changelog at [Changelog](CHANGELOG.md). Documentation fo
 - [Overview of Forus SDK Libraries](#overview-of-forus-sdk-libraries)
   - [Forus SDK](#forus-sdk)
   - [Forus Proteus Antispoof SDK](#forus-proteus-antispoof-sdk)
-  - [Forus Proteus Face SDK](#forus-proteus-face-sdk)
   - [Forus SDK Libraries Landscape](#forus-sdk-libraries-landscape)
 - [Set Up Forus SDK](#set-up-forus-sdk)  
   - [Requirements](#requirements)
   - [Download Forus SDK](#download-forus-sdk)
   - [Importing Forus SDK](#importing-forus-sdk)
   - [Importing Forus Proteus Antispoof SDK](#importing-forus-proteus-antispoof-sdk)
-  - [Importing Forus Proteus Face SDK](#importing-forus-proteus-face-sdk)
 - [Quick Start](#quick-start)
   - [Initialise and run the Forus SDK](#initialise-and-run-the-forus-sdk)
   - [Enabling Forus Proteus Antispoof SDK](#enabling-forus-proteus-antispoof-sdk)
-  - [Enabling Forus Proteus Face SDK](#enabling-forus-proteus-face-sdk)
 - [Forus Result](#forus-result)
 - [Forus Error Codes](#forus-error-codes)
 - [Forus SDK API](#forus-sdk-api)
@@ -51,9 +48,8 @@ This section lists the Forus SDK Libraries that are available for Android with t
 
 | SDK Library                                 | Gradle dependency                                 | Latest version  | Size                    |
 | --------------------------------------------| ------------------------------------------------- | --------------- | ----------------------- |
-| [Forus SDK](#forus-sdk) (Required)                                     | com.frslabs.android.sdk:forus                     | ![version](https://img.shields.io/badge/version-v4.2.3-blue)    | 350 KB     |
+| [Forus SDK](#forus-sdk) (Required)                                     | com.frslabs.android.sdk:forus                     | ![version](https://img.shields.io/badge/version-v4.3.0-blue)    | 350 KB     |
 | [Forus Proteus Antispoof SDK](#forus-proteus-antispoof-sdk) (Optional) | com.frslabs.android.sdk:forus-proteus-antispoof   | ![version](https://img.shields.io/badge/version-v1.0.0-blue)     | 4.5 MB     |
-| [Forus Proteus Face SDK](#forus-proteus-face-sdk) (Optional)           | com.frslabs.android.sdk:forus-proteus-face        | ![version](https://img.shields.io/badge/version-v1.0.0-blue)     | 1.4 MB     |
 
 #### Forus SDK
 This is the core SDK that provides a no-contact photo capture solution with face and liveness detection among other features. Its extremely customisable and gives you the captured face image as the result.
@@ -69,13 +65,6 @@ Steps to add and initialise the Forus Proteus Antispoof SDK,
 - To import Forus Proteus Antispoof SDK , Refer [Importing Forus Proteus Antispoof SDK](#importing-forus-proteus-antispoof-sdk) 
 - To enable Antispoof detection, Refer [Enabling Forus Proteus Antispoof SDK](#enabling-forus-proteus-antispoof-sdk) 
 
-#### Forus Proteus Face SDK
-This is a feature SDK that provides a drop-in replacement for the default face detection engine used in the [Forus SDK](#forus-sdk). Import this library if you face any issue with the default face detection engine. **However liveness detection capabalities are still in development and does not exist for the latest version of this feature library**.
-
-Steps to add and initialise the Forus Proteus Face SDK,
-- To import Forus Proteus Face SDK , Refer [Importing Forus Proteus Face SDK](#importing-forus-proteus-face-sdk) 
-- Refer [Enabling Forus Proteus Face SDK](#enabling-forus-proteus-face-sdk) to replace the default Face Detection Engine
-
 #### Forus SDK Libraries Landscape
 Here are block diagrams visualising how the Forus SDK would be built depending on the dependencies you choose and enable,
 
@@ -87,15 +76,6 @@ Here are block diagrams visualising how the Forus SDK would be built depending o
 - [Forus SDK](#forus-sdk) + [Forus Proteus Antispoof SDK](#forus-proteus-antispoof-sdk)
 <img src="DOC_RESOURCES/forus_sdk_landscape_default_pspoof.png" width="75%" >
 
----
-
-- [Forus SDK](#forus-sdk) + [Forus Proteus Face SDK](#forus-proteus-face-sdk)
-<img src="DOC_RESOURCES/forus_sdk_landscape_pface.png" width="75%" >
-
----
-
-- [Forus SDK](#forus-sdk) + [Forus Proteus Face SDK](#forus-proteus-face-sdk) + [Forus Proteus Antispoof SDK](#forus-proteus-antispoof-sdk)
-<img src="DOC_RESOURCES/forus_sdk_landscape_pface_pspoof.png" width="75%" >
 
 ## Set Up Forus SDK
 
@@ -189,8 +169,7 @@ dependencies {
     /*
      * Forus SDK Core Dependency
      */
-    implementation 'com.frslabs.android.sdk:forus:4.2.3'
-    implementation 'com.google.android.gms:play-services-vision:20.1.3'
+    implementation 'com.frslabs.android.sdk:forus:4.3.0'
 
     /*
      * Forus Billing Dependency (Include only if transaction based billing is enabled)
@@ -203,13 +182,6 @@ dependencies {
 - Add the dependency for the Forus Proteus Antispoof SDK to your app's module (app-level) build.gradle file:
 ```groovy
 implementation 'com.frslabs.android.sdk:forus-proteus-antispoof:1.0.0' // Forus Proteus Antispoof, For more information refer documentation
-implementation 'org.tensorflow:tensorflow-lite:2.5.0'
-```
-
-#### Importing Forus Proteus Face SDK
-- Add the dependency for the Forus Proteus Face SDK to your app's module (app-level) build.gradle file:
-```groovy
-implementation 'com.frslabs.android.sdk:forus-proteus-face:1.0.0' // Forus Proteus Face, For more information refer documentation
 implementation 'org.tensorflow:tensorflow-lite:2.5.0'
 ```
 
@@ -313,24 +285,6 @@ public class MainActivity extends AppCompatActivity{
 
 ```
 
-#### Enabling Forus Proteus Face SDK
-
-- To enable this functionality in the app, make sure you add `enableFaceEngine()` when constructing `ForusFaceConfig` object.
-```java
-  
-  // ...
-
-  ForusFaceConfig.Builder forusFaceConfigBuilder = new ForusFaceConfig.Builder()
-                /* Set ForusFaceEngine.createProteusFaceEngine() inside enableFaceEngine(ForusFaceEngine forussFaceEngine) to 
-                 * replace the default face detection engine. Make sure you have imported the appropriate dependency.
-                 */
-                .enableFaceEngine(ForusFaceEngine.createProteusFaceEngine())
-                .build();
-
-  // ...
-
-```
-
 For all `errorCode`'s and their meanings refer [Forus Error Codes](#forus-error-codes).
 
 ## Forus Result
@@ -356,7 +310,6 @@ Following error codes will be returned on the `onError` method of the callback
 | 301  | Invalid settings                                |
 | 302  | Invalid licence                                 |
 | 303  | Licence expired                                 |
-| 304  | GMS dependency not available                    |
 | 305  | Camera not available                            |
 | 306  | User canceled                                   |
 | 307  | No face detected                                |
@@ -364,7 +317,6 @@ Following error codes will be returned on the `onError` method of the callback
 | 309  | Transaction limit exceeded                      |
 | 310  | No internet connection                          |
 | 311  | Required permission denied                      |
-| 312  | Missing dependency of ProteusFace Module        |
 | 313  | Missing dependency of ProteusAntiSpoof Module   |
 | 314  | File I/O Error                                  |
 
@@ -403,7 +355,7 @@ See the below table for the public APIs of Forus SDK,
 | Method                                               | Default              | Required | Comments    |
 |:---------------------------------------------------- |:-------------------- |:-------- |:------------------------------------------------------------------------------------------------------------------------------------------------------------------------ |
 | *enableFaceEngine(ForusFaceEngine forusFaceEngine)*  | Default Face Engine  | Yes      | Refer [ForusFaceEngine](#forusfaceengine)           |
-| *setWatermarkOnFace(int watermarkColor, float watermarkSize, String timestampFormat, String watermarkField3, String watermarkField4, String watermarkField5)*      | -           | Optional      | Sets the watermark on the output image. |
+| *setWatermarkOnFace(int watermarkColor, float watermarkSize, String timestampFormat, String watermarkField3, String watermarkField4, String watermarkField5)*      | -           | Optional      | Sets the watermark on the output image. Custom watermark fields accepts max 20 characters|
 | *setFaceCaptureTimeLimit(int timeLimitInSec)*   | 8                | Optional      |Integer value between 8 to 60 seconds.     |
 | *build()*   | -               | -      | Builds ForusFaceConfig Instance  |
 
@@ -413,14 +365,9 @@ The watermark size and position on the image depends on the overall size of the 
 ##### ForusFaceEngine 
 `ForusFaceEngine` is to be set when instantiating the `ForusFaceConfig` , See [ForusFaceConfig](#forusfaceconfig)
 
-There are two available face engines,
-- Default Face Engine (Supports Eye blink and Smile Detection). Use
+- Default Face Engine. Use
  ```java
  ForusFaceEngine.createDefaultEngine(boolean eyeBlinkDetection, int eyeBlinkMessage, boolean smileDetection)
- ```
-- Proteus Face Engine (Doesn't support Eye blink and Smile Detection). Use 
- ```java
- ForusFaceEngine.createProteusFaceEngine()
  ```
 
 ## Permissions
