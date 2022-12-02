@@ -5,6 +5,7 @@
 
 # **v4.3.0** - *02-12-2022*
 - Updated Face Detection Engine implementation
+- Removed `com.google.android.gms:play-services-vision:20.1.3` dependency
 - Deprecated Proteus Face
 - Removed Error `304 | GMS dependency not available`
 - Added validation for custom watermark strings
