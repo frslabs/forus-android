@@ -357,7 +357,7 @@ See the below table for the public APIs of Forus SDK,
 | *enableFaceEngine(ForusFaceEngine forusFaceEngine)*  | Default Face Engine  | Yes      | Refer [ForusFaceEngine](#forusfaceengine)           |
 | *setWatermarkOnFace(int watermarkColor, float watermarkSize, String timestampFormat, String watermarkField3, String watermarkField4, String watermarkField5)*      | -           | Optional      | Sets the watermark on the output image. Custom watermark fields accepts max 20 characters|
 | *setFaceCaptureTimeLimit(int timeLimitInSec)*   | 8                | Optional      |Integer value between 8 to 60 seconds.     |
-| *disableFaceAlignmentCheck()*                   |  -               | Optional      |Disable face alignment check.              |
+| *disableFaceAlignmentCheck()*                   |  -               | Optional      |Disable face alignment restriction.        |
 | *build()*   | -               | -      | Builds ForusFaceConfig Instance  |
 
 Note :
