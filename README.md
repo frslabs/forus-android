@@ -48,7 +48,7 @@ This section lists the Forus SDK Libraries that are available for Android with t
 
 | SDK Library                                 | Gradle dependency                                 | Latest version  | Size                    |
 | --------------------------------------------| ------------------------------------------------- | --------------- | ----------------------- |
-| [Forus SDK](#forus-sdk) (Required)                                     | com.frslabs.android.sdk:forus                     | ![version](https://img.shields.io/badge/version-v4.3.0-blue)    | 350 KB     |
+| [Forus SDK](#forus-sdk) (Required)                                     | com.frslabs.android.sdk:forus                     | ![version](https://img.shields.io/badge/version-v4.3.1-blue)    | 350 KB     |
 | [Forus Proteus Antispoof SDK](#forus-proteus-antispoof-sdk) (Optional) | com.frslabs.android.sdk:forus-proteus-antispoof   | ![version](https://img.shields.io/badge/version-v1.0.0-blue)     | 4.5 MB     |
 
 #### Forus SDK
@@ -357,6 +357,7 @@ See the below table for the public APIs of Forus SDK,
 | *enableFaceEngine(ForusFaceEngine forusFaceEngine)*  | Default Face Engine  | Yes      | Refer [ForusFaceEngine](#forusfaceengine)           |
 | *setWatermarkOnFace(int watermarkColor, float watermarkSize, String timestampFormat, String watermarkField3, String watermarkField4, String watermarkField5)*      | -           | Optional      | Sets the watermark on the output image. Custom watermark fields accepts max 20 characters|
 | *setFaceCaptureTimeLimit(int timeLimitInSec)*   | 8                | Optional      |Integer value between 8 to 60 seconds.     |
+| *disableFaceAlignmentCheck()*                   |  -               | Optional      |Disable face alignment check.              |
 | *build()*   | -               | -      | Builds ForusFaceConfig Instance  |
 
 Note :
