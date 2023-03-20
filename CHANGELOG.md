@@ -2,6 +2,8 @@
 
 ‼ ATTENTION ‼ → BREAKING CHANGE introduced at Forus SDK `v4.2.1`. We have introduced a new license format. If you are using versions prior to `v4.2.1` and intend to update to `v4.2.1` or above please contact support@frslabs.com for an updated license.
 
+# **v4.3.1** - *17-03-2023*
+- Add default face alignment restriction.
 
 # **v4.3.0** - *02-12-2022*
 - Updated Face Detection Engine implementation
