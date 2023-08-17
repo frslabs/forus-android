@@ -48,8 +48,16 @@ This section lists the Forus SDK Libraries that are available for Android with t
 
 | SDK Library                                 | Gradle dependency                                 | Latest version  | Size                    |
 | --------------------------------------------| ------------------------------------------------- | --------------- | ----------------------- |
-| [Forus SDK](#forus-sdk) (Required)                                     | com.frslabs.android.sdk:forus                     | ![version](https://img.shields.io/badge/version-v4.3.5-blue)    | 350 KB     |
+| [Forus SDK](#forus-sdk) (Required)                                     | com.frslabs.android.sdk:forus                     | ![version](https://img.shields.io/badge/version-v4.4.0-blue)    | 350 KB     |
 | [Forus Proteus Antispoof SDK](#forus-proteus-antispoof-sdk) (Optional) | com.frslabs.android.sdk:forus-proteus-antispoof   | ![version](https://img.shields.io/badge/version-v1.0.0-blue)     | 4.5 MB     |
+| [Core Face Bundled SDK](#core-face-bundled-sdk) (Required) | com.frslabs.android.sdk:core-face-bundled  | ![version](https://img.shields.io/badge/version-v1.0.0-blue)     | 6.2 MB     |
+
+### Face Dependencies
+Forus uses Face detection capabilities via either of these two dependencies, and it is required to include any one of them. [Core Face Bundled SDK](#core-face-bundled) and [Core Face Unbundled SDK](#core-face-unbundled). If size is not an issue, we recommend going with the Core Face Bundled SDK. More details about these dependencies are found below.
+#### Core Face Bundled SDK
+Include this dependency if size of the SDK is not an issue (Adds ~6.2 MB to the app size). This is the recommended approach.
+#### Core Face Unbundled SDK
+Include this dependency if increase in SDK size is a concern (Adds ~600 KB to the app size). However, upon first run (and only on first run), the face dependencies are downloaded while users are shown a screen with a progress bar. The Core Face Bundled SDK does not have this behaviour as all associated files are bundled during compile time itself (hence the increase in size).
 
 #### Forus SDK
 This is the core SDK that provides a no-contact photo capture solution with face and liveness detection among other features. Its extremely customisable and gives you the captured face image as the result.
@@ -90,30 +98,19 @@ com.android.tools.build:gradle v3.2.1 or later
 Add the following code to your `project` level `build.gradle` file
 
 ```groovy
-allprojects {
+allprojects { 
     repositories {
-
-        //Maven credentials for the Forus SDK
-        maven {
-            url "https://forus-android.repo.frslabs.space/"
-            credentials {
-                   username '<YOUR_USERNAME>'
-                   password '<YOUR_PASSOWRD>'
+        //'forus-android' and  'common-core-android' is required for forus and core face SDKs.
+        // 'torus-android' is required for forus billing dependencies
+        ['torus-android' , 'forus-android' , 'common-core-android'].each { value->
+            maven {
+                url "https://${value}.repo.frslabs.space/"
+                credentials {
+                    username '<YOUR_USERNAME>' 
+                    password '<YOUR_PASSOWRD>' 
+                }
             }
         }
-
-        /*
-        *Include below code only for transaction based billing
-        */
-        //Maven credentials for the Torus SDK
-        maven {
-            url "https://torus-android.repo.frslabs.space/"
-            credentials {
-                username '<YOUR_USERNAME>'
-                password '<YOUR_PASSOWRD>'
-            }
-        }
-
     }
 }
 ```
@@ -169,7 +166,14 @@ dependencies {
     /*
      * Forus SDK Core Dependency
      */
-    implementation 'com.frslabs.android.sdk:forus:4.3.0'
+    implementation 'com.frslabs.android.sdk:forus:4.4.0'
+
+    // REQUIRED : Use ANY ONE of the below core-face modules, i.e either core-face-bundled OR core-face-unbundled
+    // Recommended over core-face-unbundled
+    implementation 'com.frslabs.android.sdk:core-face-bundled:1.0.0'
+
+    // Uncomment the below line and remove core-face-bundled mentioned above to use core-face-unbundled dependency.
+    //implementation 'com.frslabs.android.sdk:core-face-unbundled:1.0.0'
 
     /*
      * Forus Billing Dependency (Include only if transaction based billing is enabled)
