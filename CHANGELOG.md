@@ -2,6 +2,10 @@
 
 ‼ ATTENTION ‼ → BREAKING CHANGE introduced at Forus SDK `v4.2.1`. We have introduced a new license format. If you are using versions prior to `v4.2.1` and intend to update to `v4.2.1` or above please contact support@frslabs.com for an updated license.
 
+## **v3.2.0** - *17-08-2023*
+- Added bundled and unbundled core face dependencies.
+- Bug fixes.
+
 # **v4.3.3** - *03-05-2023*
 - Bug fixes
 
