@@ -52,16 +52,11 @@ This section lists the Forus SDK Libraries that are available for Android with t
 | SDK Library                                 | Gradle dependency                                 | Latest version  | Size                    |
 | --------------------------------------------| ------------------------------------------------- | --------------- | ----------------------- |
 | [Forus SDK](#forus-sdk) (Required)                                     | com.frslabs.android.sdk:forus                     | ![version](https://img.shields.io/badge/version-v4.4.1-blue)    | 350 KB     |
-| [Forus Proteus Antispoof SDK](#forus-proteus-antispoof-sdk) (Optional) | com.frslabs.android.sdk:forus-proteus-antispoof   | ![version](https://img.shields.io/badge/version-v1.0.0-blue)     | 4.5 MB     |
 | [Core Face Bundled SDK](#core-face-bundled-sdk) (Required) | com.frslabs.android.sdk:core-face-bundled  | ![version](https://img.shields.io/badge/version-v1.0.0-blue)     | 6.2 MB     |
-| [Forus Core Face Mask SDK](#forus-core-face-mask-sdk)     | com.frslabs.android.sdk:core-face-mask | ![version](https://img.shields.io/badge/version-v1.0.0-blue)  | 3.1 MB |
+| [Forus Proteus Antispoof SDK](#forus-proteus-antispoof-sdk) (Optional) | com.frslabs.android.sdk:forus-proteus-antispoof   | ![version](https://img.shields.io/badge/version-v1.0.0-blue)     | 4.5 MB     |
+| [Forus Core Face Mask SDK](#forus-core-face-mask-sdk) (Optional)    | com.frslabs.android.sdk:core-face-mask | ![version](https://img.shields.io/badge/version-v1.0.0-blue)  | 3.1 MB |
 
-### Face Dependencies
-Forus uses Face detection capabilities via either of these two dependencies, and it is required to include any one of them. [Core Face Bundled SDK](#core-face-bundled) and [Core Face Unbundled SDK](#core-face-unbundled). If size is not an issue, we recommend going with the Core Face Bundled SDK. More details about these dependencies are found below.
-#### Core Face Bundled SDK
-Include this dependency if size of the SDK is not an issue (Adds ~6.2 MB to the app size). This is the recommended approach.
-#### Core Face Unbundled SDK
-Include this dependency if increase in SDK size is a concern (Adds ~600 KB to the app size). However, upon first run (and only on first run), the face dependencies are downloaded while users are shown a screen with a progress bar. The Core Face Bundled SDK does not have this behaviour as all associated files are bundled during compile time itself (hence the increase in size).
+
 
 #### Forus SDK
 This is the core SDK that provides a no-contact photo capture solution with face and liveness detection among other features. Its extremely customisable and gives you the captured face image as the result.
@@ -69,6 +64,13 @@ This is the core SDK that provides a no-contact photo capture solution with face
 Steps to add and initialise the Forus SDK,
 - To get started with setting up Forus SDK, refer [Set Up Forus SDK](#set-up-forus-sdk)
 - To integrate the Forus SDK, Refer [Initialise and run the Forus SDK](#initialise-and-run-the-forus-sdk)
+
+#### Face Dependencies
+Forus uses Face detection capabilities via either of these two dependencies, and it is required to include any one of them. [Core Face Bundled SDK](#core-face-bundled) and [Core Face Unbundled SDK](#core-face-unbundled). If size is not an issue, we recommend going with the Core Face Bundled SDK. More details about these dependencies are found below.
+##### Core Face Bundled SDK
+Include this dependency if size of the SDK is not an issue (Adds ~6.2 MB to the app size). This is the recommended approach.
+##### Core Face Unbundled SDK
+Include this dependency if increase in SDK size is a concern (Adds ~600 KB to the app size). However, upon first run (and only on first run), the face dependencies are downloaded while users are shown a screen with a progress bar. The Core Face Bundled SDK does not have this behaviour as all associated files are bundled during compile time itself (hence the increase in size).
 
 #### Forus Proteus Antispoof SDK
 This is a feature SDK that provides antispoof detection capabilities on top of [Forus SDK](#forus-sdk). The antispoof result is a confidence percentage which denotes whether the face image is a fake or not. 
@@ -78,7 +80,9 @@ Steps to add and initialise the Forus Proteus Antispoof SDK,
 - To enable Antispoof detection, Refer [Enabling Forus Proteus Antispoof SDK](#enabling-forus-proteus-antispoof-sdk) 
 
 #### Forus Core Face Mask SDK
-This is a feature SDK that provides face mask detection capabilities on top of [Forus SDK](#forus-sdk). The face mask result is a boolean value where true means it detects face mask.
+> Requires Minimum SDK Version 21 and above.
+
+This feature SDK provides face mask detection capabilities on top of [Forus SDK](#forus-sdk). The face mask result is a boolean value where true means it detects face mask.
 
 Steps to add and initialise the Core Face Mask SDK,
 - To import Core Face Mask SDK , Refer [Importing Core Face Mask SDK](#importing-core-face-mask-sdk) 
