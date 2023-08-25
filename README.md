@@ -19,15 +19,18 @@ You can find the latest changelog at [Changelog](CHANGELOG.md). Documentation fo
 - [Overview of Forus SDK Libraries](#overview-of-forus-sdk-libraries)
   - [Forus SDK](#forus-sdk)
   - [Forus Proteus Antispoof SDK](#forus-proteus-antispoof-sdk)
+  - [Forus Core Face Mask SDK](#forus-core-face-mask-sdk)
   - [Forus SDK Libraries Landscape](#forus-sdk-libraries-landscape)
 - [Set Up Forus SDK](#set-up-forus-sdk)  
   - [Requirements](#requirements)
   - [Download Forus SDK](#download-forus-sdk)
   - [Importing Forus SDK](#importing-forus-sdk)
   - [Importing Forus Proteus Antispoof SDK](#importing-forus-proteus-antispoof-sdk)
+  - [Forus Core Face Mask SDK](#importing-core-face-mask-sdk)
 - [Quick Start](#quick-start)
   - [Initialise and run the Forus SDK](#initialise-and-run-the-forus-sdk)
   - [Enabling Forus Proteus Antispoof SDK](#enabling-forus-proteus-antispoof-sdk)
+  - [Enabling Forus Core Face Mask SDK](#enabling-forus-core-face-mask-sdk)
 - [Forus Result](#forus-result)
 - [Forus Error Codes](#forus-error-codes)
 - [Forus SDK API](#forus-sdk-api)
@@ -51,6 +54,7 @@ This section lists the Forus SDK Libraries that are available for Android with t
 | [Forus SDK](#forus-sdk) (Required)                                     | com.frslabs.android.sdk:forus                     | ![version](https://img.shields.io/badge/version-v4.4.0-blue)    | 350 KB     |
 | [Forus Proteus Antispoof SDK](#forus-proteus-antispoof-sdk) (Optional) | com.frslabs.android.sdk:forus-proteus-antispoof   | ![version](https://img.shields.io/badge/version-v1.0.0-blue)     | 4.5 MB     |
 | [Core Face Bundled SDK](#core-face-bundled-sdk) (Required) | com.frslabs.android.sdk:core-face-bundled  | ![version](https://img.shields.io/badge/version-v1.0.0-blue)     | 6.2 MB     |
+| [Forus Core Face Mask SDK](#forus-core-face-mask-sdk)     | com.frslabs.android.sdk:core-face-mask | ![version](https://img.shields.io/badge/version-v1.0.0-blue)  | 3.1 MB |
 
 ### Face Dependencies
 Forus uses Face detection capabilities via either of these two dependencies, and it is required to include any one of them. [Core Face Bundled SDK](#core-face-bundled) and [Core Face Unbundled SDK](#core-face-unbundled). If size is not an issue, we recommend going with the Core Face Bundled SDK. More details about these dependencies are found below.
@@ -62,7 +66,7 @@ Include this dependency if increase in SDK size is a concern (Adds ~600 KB to th
 #### Forus SDK
 This is the core SDK that provides a no-contact photo capture solution with face and liveness detection among other features. Its extremely customisable and gives you the captured face image as the result.
 
-Steps to add and initialise the Forus Proteus Antispoof SDK,
+Steps to add and initialise the Forus SDK,
 - To get started with setting up Forus SDK, refer [Set Up Forus SDK](#set-up-forus-sdk)
 - To integrate the Forus SDK, Refer [Initialise and run the Forus SDK](#initialise-and-run-the-forus-sdk)
 
@@ -72,6 +76,13 @@ This is a feature SDK that provides antispoof detection capabilities on top of [
 Steps to add and initialise the Forus Proteus Antispoof SDK,
 - To import Forus Proteus Antispoof SDK , Refer [Importing Forus Proteus Antispoof SDK](#importing-forus-proteus-antispoof-sdk) 
 - To enable Antispoof detection, Refer [Enabling Forus Proteus Antispoof SDK](#enabling-forus-proteus-antispoof-sdk) 
+
+#### Forus Core Face Mask SDK
+This is a feature SDK that provides face mask detection capabilities on top of [Forus SDK](#forus-sdk). The face mask result is a boolean value where true means it detects face mask.
+
+Steps to add and initialise the Core Face Mask SDK,
+- To import Core Face Mask SDK , Refer [Importing Core Face Mask SDK](#importing-core-face-mask-sdk) 
+- To enable Antispoof detection, Refer [Enabling Forus Proteus Antispoof SDK](#enabling-forus-core-face-mask-sdk) 
 
 #### Forus SDK Libraries Landscape
 Here are block diagrams visualising how the Forus SDK would be built depending on the dependencies you choose and enable,
@@ -189,6 +200,17 @@ implementation 'com.frslabs.android.sdk:forus-proteus-antispoof:1.0.0' // Forus 
 implementation 'org.tensorflow:tensorflow-lite:2.5.0'
 ```
 
+#### Importing Core Face Mask SDK
+- Add the dependency for the Core Face Mask SDK to your app's module (app-level) build.gradle file:
+```groovy
+implementation 'com.frslabs.android.sdk:core-face-mask:1.0.0' // Forus Core Face Mask, For more information refer documentation
+implementation 'org.tensorflow:tensorflow-lite-task-vision:0.4.0' 
+// If using org.tensorflow:tensorflow-lite then use tensorflow-lite-vision dependency like this
+//  implementation ('org.tensorflow:tensorflow-lite-task-vision:0.4.0') {
+//        exclude group: 'org.tensorflow', module: 'tensorflow-lite-api'
+//    }
+```
+
 ## Quick Start
 
 #### Initialise and run the Forus SDK
@@ -286,8 +308,24 @@ public class MainActivity extends AppCompatActivity{
                 .build();
 
   // ...
-
 ```
+
+#### Enabling Forus Core Face Mask SDK
+
+- To enable the antispoof functionality in the app, make sure you add `enableFaceMaskDetection()` when constructing `ForusFaceConfig` object.
+```java
+  
+  // ...
+
+  ForusFaceConfig.Builder forusFaceConfigBuilder = new ForusFaceConfig.Builder()
+                /* Calling enableFaceMaskDetection() will enable face mask detection if you have imported the dependency.
+                 */
+                .enableFaceMaskDetection()
+                .build();
+
+  // ...
+```
+
 
 For all `errorCode`'s and their meanings refer [Forus Error Codes](#forus-error-codes).
 
@@ -323,6 +361,9 @@ Following error codes will be returned on the `onError` method of the callback
 | 311  | Required permission denied                      |
 | 313  | Missing dependency of ProteusAntiSpoof Module   |
 | 314  | File I/O Error                                  |
+| 315  | Error downloading unbundled core face module dependency  |
+| 316  | Missing dependency of core face module |
+| 317  | Missing dependency of core face mask module |
 
 ## Forus SDK API 
 
