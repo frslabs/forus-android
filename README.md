@@ -193,7 +193,7 @@ dependencies {
     /*
      * Forus Billing Dependency (Include only if transaction based billing is enabled)
      */
-    implementation('com.frslabs.android.sdk:torus:1.0.1')
+    implementation('com.frslabs.android.sdk:torus:1.2.1')
 }
 ```
 
