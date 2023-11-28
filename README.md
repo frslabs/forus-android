@@ -51,7 +51,7 @@ This section lists the Forus SDK Libraries that are available for Android with t
 
 | SDK Library                                 | Gradle dependency                                 | Latest version  | Size                    |
 | --------------------------------------------| ------------------------------------------------- | --------------- | ----------------------- |
-| [Forus SDK](#forus-sdk) (Required)                                     | com.frslabs.android.sdk:forus                     | ![version](https://img.shields.io/badge/version-v4.4.1-blue)    | 350 KB     |
+| [Forus SDK](#forus-sdk) (Required)                                     | com.frslabs.android.sdk:forus                     | ![version](https://img.shields.io/badge/version-v4.4.2-blue)    | 350 KB     |
 | [Core Face Bundled SDK](#core-face-bundled-sdk) (Required) | com.frslabs.android.sdk:core-face-bundled  | ![version](https://img.shields.io/badge/version-v1.0.0-blue)     | 6.2 MB     |
 | [Forus Proteus Antispoof SDK](#forus-proteus-antispoof-sdk) (Optional) | com.frslabs.android.sdk:forus-proteus-antispoof   | ![version](https://img.shields.io/badge/version-v1.0.0-blue)     | 4.5 MB     |
 | [Forus Core Face Mask SDK](#forus-core-face-mask-sdk) (Optional)    | com.frslabs.android.sdk:core-face-mask | ![version](https://img.shields.io/badge/version-v1.0.0-blue)  | 3.1 MB |
@@ -386,6 +386,7 @@ See the below table for the public APIs of Forus SDK,
 |:---------------------------------------------------- |:-------------------- |:-------- |:------------------------------------------------------------------------------------------------------------------------------------------------------------------------ |
 | *setLicenceKey(String licenseKey)*                   | NULL                 | Yes      | Sets the License Key needed for Forus SDK                          |
 | *setShowInstructions(boolean showInstructions)*      | false                | Optional      | If it is **true** then the instruction screen will be shown to the user before showing the face capture screen.                         |
+| *disableBackPress()*      | -                | Optional      | Disable back button at face capture screen           |
 | *setForusCameraConfig(ForusCameraConfig ForusCameraConfig)*   | NULL                 | Yes      | Refer [ForusCameraConfig](#foruscameraconfig)                         |
 | *setForusFaceConfig(ForusFaceConfig forusFaceConfig)*   | NULL                 | Yes      | Refer [ForusFaceConfig](#forusfaceconfig)                         |
 | *build()*   | -               | -      | Builds ForusConfig Instance  |
