@@ -51,7 +51,7 @@ This section lists the Forus SDK Libraries that are available for Android with t
 
 | SDK Library                                 | Gradle dependency                                 | Latest version  | Size                    |
 | --------------------------------------------| ------------------------------------------------- | --------------- | ----------------------- |
-| [Forus SDK](#forus-sdk) (Required)                                     | com.frslabs.android.sdk:forus                     | ![version](https://img.shields.io/badge/version-v4.4.2-blue)    | 350 KB     |
+| [Forus SDK](#forus-sdk) (Required)                                     | com.frslabs.android.sdk:forus                     | ![version](https://img.shields.io/badge/version-v4.4.4-blue)    | 350 KB     |
 | [Core Face Bundled SDK](#core-face-bundled-sdk) (Required) | com.frslabs.android.sdk:core-face-bundled  | ![version](https://img.shields.io/badge/version-v1.0.0-blue)     | 6.2 MB     |
 | [Forus Proteus Antispoof SDK](#forus-proteus-antispoof-sdk) (Optional) | com.frslabs.android.sdk:forus-proteus-antispoof   | ![version](https://img.shields.io/badge/version-v1.0.0-blue)     | 4.5 MB     |
 | [Forus Core Face Mask SDK](#forus-core-face-mask-sdk) (Optional)    | com.frslabs.android.sdk:core-face-mask | ![version](https://img.shields.io/badge/version-v1.0.0-blue)  | 3.1 MB |
@@ -126,6 +126,13 @@ allprojects {
                 }
             }
         }
+        maven {
+            url "https://www.repo2.frslabs.space/repository/forus-android/"
+            credentials {
+                username '<YOUR_USERNAME>' 
+                password '<YOUR_PASSOWRD>' 
+            }
+        }
     }
 }
 ```
@@ -181,7 +188,7 @@ dependencies {
     /*
      * Forus SDK Core Dependency
      */
-    implementation 'com.frslabs.android.sdk:forus:4.4.0'
+    implementation 'com.frslabs.android.sdk:forus:4.4.4'
 
     // REQUIRED : Use ANY ONE of the below core-face modules, i.e either core-face-bundled OR core-face-unbundled
     // Recommended over core-face-unbundled
