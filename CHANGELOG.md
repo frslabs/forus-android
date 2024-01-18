@@ -2,6 +2,9 @@
 
 ‼ ATTENTION ‼ → BREAKING CHANGE introduced at Forus SDK `v4.2.1`. We have introduced a new license format. If you are using versions prior to `v4.2.1` and intend to update to `v4.2.1` or above please contact support@frslabs.com for an updated license.
 
+# **v4.4.4** - *15-12-2023*
+- Add `disableBackPress()` option to disable back button.
+
 # **v4.4.1** - *25-08-2023*
 - Added core face mask dependencies to detect face mask.
 
