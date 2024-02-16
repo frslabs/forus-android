@@ -119,18 +119,11 @@ allprojects {
         // 'torus-android' is required for forus billing dependencies
         ['torus-android' , 'forus-android' , 'common-core-android'].each { value->
             maven {
-                url "https://${value}.repo.frslabs.space/"
+                url "https://www.repo2.frslabs.space/repository/${value}/"
                 credentials {
                     username '<YOUR_USERNAME>' 
                     password '<YOUR_PASSOWRD>' 
                 }
-            }
-        }
-        maven {
-            url "https://www.repo2.frslabs.space/repository/forus-android/"
-            credentials {
-                username '<YOUR_USERNAME>' 
-                password '<YOUR_PASSOWRD>' 
             }
         }
     }
