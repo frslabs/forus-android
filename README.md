@@ -200,8 +200,8 @@ dependencies {
 #### Importing Forus Proteus Antispoof SDK
 - Add the dependency for the Forus Proteus Antispoof SDK to your app's module (app-level) build.gradle file:
 ```groovy
-implementation 'com.frslabs.android.sdk:forus-proteus-antispoof:1.0.0' // Forus Proteus Antispoof, For more information refer documentation
-implementation 'org.tensorflow:tensorflow-lite:2.5.0'
+implementation 'com.frslabs.android.sdk:forus-proteus-antispoof:1.0.0@aar' // Forus Proteus Antispoof, For more information refer documentation
+implementation 'org.tensorflow:tensorflow-lite:2.16.1'
 ```
 
 #### Importing Core Face Mask SDK
