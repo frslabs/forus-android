@@ -181,7 +181,7 @@ dependencies {
     /*
      * Forus SDK Core Dependency
      */
-    implementation 'com.frslabs.android.sdk:forus:4.4.4'
+    implementation 'com.frslabs.android.sdk:forus:<latest verison>'
 
     // REQUIRED : Use ANY ONE of the below core-face modules, i.e either core-face-bundled OR core-face-unbundled
     // Recommended over core-face-unbundled
@@ -193,7 +193,7 @@ dependencies {
     /*
      * Forus Billing Dependency (Include only if transaction based billing is enabled)
      */
-    implementation('com.frslabs.android.sdk:torus:1.2.1')
+    implementation('com.frslabs.android.sdk:torus:1.2.1@aar')
 }
 ```
 
