@@ -51,7 +51,7 @@ This section lists the Forus SDK Libraries that are available for Android with t
 
 | SDK Library                                 | Gradle dependency                                 | Latest version  | Size                    |
 | --------------------------------------------| ------------------------------------------------- | --------------- | ----------------------- |
-| [Forus SDK](#forus-sdk) (Required)                                     | com.frslabs.android.sdk:forus                     | ![version](https://img.shields.io/badge/version-v4.5.1-blue)    | 350 KB     |
+| [Forus SDK](#forus-sdk) (Required)                                     | com.frslabs.android.sdk:forus                     | ![version](https://img.shields.io/badge/version-v4.5.3-blue)    | 350 KB     |
 | [Core Face Bundled SDK](#core-face-bundled-sdk) (Required) | com.frslabs.android.sdk:core-face-bundled  | ![version](https://img.shields.io/badge/version-v1.0.1-blue)     | 6.2 MB     |
 | [Forus Proteus Antispoof SDK](#forus-proteus-antispoof-sdk) (Optional) | com.frslabs.android.sdk:forus-proteus-antispoof   | ![version](https://img.shields.io/badge/version-v1.0.0-blue)     | 4.5 MB     |
 | [Forus Core Face Mask SDK](#forus-core-face-mask-sdk) (Optional)    | com.frslabs.android.sdk:core-face-mask | ![version](https://img.shields.io/badge/version-v1.0.0-blue)  | 3.1 MB |
