@@ -2,6 +2,15 @@
 
 ‼ ATTENTION ‼ → BREAKING CHANGE introduced at Forus SDK `v4.2.1`. We have introduced a new license format. If you are using versions prior to `v4.2.1` and intend to update to `v4.2.1` or above please contact support@frslabs.com for an updated license.
 
+# **v4.5.9** - *11-11-2024*
+- Bug fixes.
+
+# **v4.5.8** - *05-11-2024*
+- Bug fixes and face capture improvements.
+
+# **v4.5.7** - *29-10-2024*
+- Face capture improvements.
+
 # **v4.5.6** - *23-10-2024*
 - Update error message and improvements.
 
@@ -9,13 +18,13 @@
 - Improvements in camera performance.
 
 # **v4.4.9** - *06-06-2024*
-- Big fixes.
+- Bug fixes.
 
 # **v4.4.8** - *29-05-2024*
-- Big fixes.
+- Bug fixes.
 
 # **v4.4.7** - *03-05-2024*
-- Big fixes.
+- Bug fixes.
 
 # **v4.4.4** - *15-12-2023*
 - Add `disableBackPress()` option to disable back button.
@@ -28,13 +37,13 @@
 - Bug fixes.
 
 # **v4.3.3** - *03-05-2023*
-- Bug fixes
+- Bug fixes.
 
 # **v4.3.2** - *01-05-2023*
-- Bug fixes
+- Bug fixes.
 
 # **v4.3.1** - *17-03-2023*
-- Add default face alignment restriction
+- Add default face alignment restriction.
 
 # **v4.3.0** - *02-12-2022*
 - Updated Face Detection Engine implementation
