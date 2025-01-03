@@ -2,6 +2,13 @@
 
 ‼ ATTENTION ‼ → BREAKING CHANGE introduced at Forus SDK `v4.2.1`. We have introduced a new license format. If you are using versions prior to `v4.2.1` and intend to update to `v4.2.1` or above please contact support@frslabs.com for an updated license.
 
+# **v4.6.1** - *03-01-2025*
+- Increase eye blink and smile detection time.
+
+# **v4.6.0** - *20-12-2024*
+- Bug fixes.
+- Antispoof detection model improvements.
+
 # **v4.5.9** - *11-11-2024*
 - Bug fixes.
 
