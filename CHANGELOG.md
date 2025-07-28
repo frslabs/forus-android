@@ -2,6 +2,9 @@
 
 ‼ ATTENTION ‼ → BREAKING CHANGE introduced at Forus SDK `v4.2.1`. We have introduced a new license format. If you are using versions prior to `v4.2.1` and intend to update to `v4.2.1` or above please contact support@frslabs.com for an updated license.
 
+# **v4.6.5** - *25-07-2025*
+- Improvements in Face capture.
+
 # **v4.6.2** - *07-02-2025*
 - Bug fixes.
 
